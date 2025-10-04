@@ -132,7 +132,7 @@ body.dark-mode {
 
 /* Appliquer une transition douce lors du changement de thème */
 body, header, .container {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.1s ease, color 0.1s ease;
 }
 
 /* Ajustement pour le container en mode sombre */
@@ -187,4 +187,5 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
 
