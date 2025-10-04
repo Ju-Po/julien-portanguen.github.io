@@ -1,0 +1,120 @@
+/* --- Variables et Style Général --- */
+:root {
+    --primary-color: #2c3e50; /* Bleu marine foncé */
+    --secondary-color: #3498db; /* Bleu clair */
+    --background-color: #ecf0f1; /* Gris très clair */
+    --text-color: #34495e; /* Gris foncé */
+    --light-text-color: #ffffff;
+    --border-radius: 5px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Barre de Navigation --- */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-brand {
+    color: var(--light-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--light-text-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: var(--border-radius);
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--secondary-color);
+}
+
+/* --- Contenu Principal --- */
+main {
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Section CV (exemple) --- */
+.cv-item {
+    margin-bottom: 2rem;
+}
+
+.cv-item h3 {
+    color: var(--secondary-color);
+}
+
+/* --- Pied de page --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* --- Responsive pour les mobiles --- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+}
